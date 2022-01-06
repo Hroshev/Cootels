@@ -45,21 +45,30 @@ body {
   color: #fff;
   background-color: #0e1734;
   padding: 16px 32px;
+  transition: background-color 0.3s linear;
 }
 
 .button:hover {
   background-color: #0e1734c9;
 }
 
-/* Header */
-.header {
-  padding: 80px 0 175px;
+.wrap {
+  padding: 80px 0;
 }
 
+/* Header */
 .header__content {
   margin-top: 135px;
   width: calc(90% / 2);
+  /* transform: translate(0px, 70%); */
+  /* opacity: 0;
+  transition: all 0.8s ease 0s; */
 }
+
+/* .header__content.__active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+} */
 
 .header__content > h1 {
   font-size: 48px;
@@ -70,10 +79,6 @@ body {
 }
 
 /* learnMore */
-.learnMore {
-  padding: 80px 0;
-}
-
 .learnMore__content {
   margin-top: 105px;
   width: calc(120% / 2);
@@ -84,10 +89,6 @@ body {
 }
 
 /* Promo */
-.promo {
-  padding: 80px 0;
-}
-
 .promo__content {
   margin-top: 113px;
   width: calc(110% / 2);
@@ -97,6 +98,105 @@ body {
   margin-top: 25px;
 }
 
-.indent {
+.promo__indent {
   margin-top: 35px;
+}
+
+/* Rooms */
+.rooms__content {
+  margin: 0 auto;
+  max-width: 590px;
+  text-align: center;
+}
+
+.rooms__indent {
+  margin-top: 80px;
+}
+
+.rooms__box {
+  width: 384px;
+  padding: 0 10px;
+}
+
+.rooms__box > h3 {
+  margin-top: 32px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #000;
+}
+
+.rooms__box > p {
+  margin-top: 16px;
+}
+
+.rooms__box > a {
+  margin-top: 32px;
+  display: inline-block;
+  cursor: pointer;
+  color: #424f7b;
+  transition: color 0.3s linear;
+}
+
+.rooms__box > a:hover{
+  color: #424f7bb6;
+}
+
+/* More */
+.more__content {
+  max-width: 420px;
+}
+
+.more__suptitle {
+  font-weight: 500;
+  font-size: 16px;
+  color: #424f7b;
+}
+
+.more__faq{
+  max-width: 590px;
+}
+
+.div{
+background: #FFFFFF;
+border-radius: 4px;
+box-shadow: 3px 3px red, -1em 0 .4em olive;
+padding: 20px;
+}
+
+
+.faq__dropdown {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #424F7B;
+  /* text-align: center; */
+  cursor: pointer;
+  /* text-align: left; */
+  transition: color 0.2s linear;
+}
+
+.faq__dropdown:hover {
+  color: #96b8cc;
+}
+
+.faq__dropdown:before {
+  position: absolute;
+  content: "";
+  background: url("../img/buttonClose.png") no-repeat center;
+  width: 5%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.faq__item {
+  padding: 0 30px;
+  max-height: 0;
+  align-items: center;
+  text-transform: capitalize;
+  transition: max-height 0.8s ease-out;
+  /* overflow: hidden; */
 }
