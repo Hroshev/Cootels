@@ -1,6 +1,6 @@
-let list = document.getElementsByClassName("tip__box__dropdown");
-for (let i = 0; i < list.length; i++) {
-  list[i].addEventListener("click", function () {
+for (let elem of document.querySelectorAll(".tip__box__dropdown")) {
+  elem.addEventListener("click", function () {
+    this.nextElementSibling.classList.toggle("tip__box__active");
     let content = this.nextElementSibling;
     if (content.style.maxHeight) {
       content.style.maxHeight = null;

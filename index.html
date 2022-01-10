@@ -174,22 +174,28 @@
           <div class="features__tip">
             <div class="features__tip__box">
               <h3 class="tip__box__dropdown">1. Choose a room and date</h3>
-              <p class="tip__box__text">
-                The apartment has a living room and a fully equipped kitchen. A flat-screen TV is also available.
-              </p>
+              <div class="tip__box__text">
+                <p>
+                  The apartment has a living room and a fully equipped kitchen. A flat-screen TV is also available.
+                </p>
+              </div>
             </div>
             <div class="features__tip__box">
               <h3 class="tip__box__dropdown">2. Check for room availability</h3>
-              <p class="tip__box__text">
-                Contact us via phone or email, ask for availability of you
-                choice of room. We might offer you something exciting.
-              </p>
+              <div class="tip__box__text">
+                <p>
+                  Contact us via phone or email, ask for availability of you
+                  choice of room. We might offer you something exciting.
+                </p>
+              </div>
             </div>
             <div class="features__tip__box">
               <h3 class="tip__box__dropdown">3. Enjoy your room</h3>
-              <p class="tip__box__text">
-                Apartments with a terrace are located in the municipality of Etnešeuen.
-              </p>
+              <div class="tip__box__text">
+                <p>
+                  Apartments with a terrace are located in the municipality of Etnešeuen.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -248,10 +254,30 @@
               <a href="https://www.facebook.com/"><img src="img/facebook.svg"></a>
             </div>
           </div>
-          <div class="footer__popup">
-            <h3 class="footer__title">Reservation</h3>
-            <a class="footer__text" href="#">See the Steps</a>
-            <a class="footer__text" href="#">Best Time</a>
+          <div class="footer__modal">
+            <h3 class="footer__title">About hotel</h3>
+            <!-- modal-1-->
+            <button class="footer__text" id="btn_modal_window">Awards(modal)</button>
+            <div id="my_modal" class="modal">
+              <div class="modal_content">
+                <span class="close_modal_window">×</span>
+                <div class="modal_content_text">
+                  <h3>Reaching for the Stars</h3>
+                  <p>Reaching for the Stars
+                    So who determines how many stars each hotel receives? In Europe, local government agencies and
+                    independent organizations hand out star ratings to hotels. In the U.S., stars are rewarded by a
+                    variety of different groups, from travel guidebooks and national consumer travel associations to
+                    travel agencies and websites.</p>
+                  <p>To make things more confusing, each travel website has its own hotel star system. So the same
+                    property may receive three stars on Travelocity, five stars on Orbitz, and four stars on Expedia.
+                    Luckily, most of these travel websites and associations provide a guide to their personal hotel star
+                    rating system. For the most part, the North American hotel star system breaks down as seen below.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- /modal-1-->
+            <button class="footer__text">Best Time</button>
           </div>
           <div class="footer__contact">
             <h3 class="footer__title">Contact</h3>
@@ -268,5 +294,6 @@
   <script src="js/scrollTo.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/swiper.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>
