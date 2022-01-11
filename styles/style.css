@@ -229,7 +229,7 @@ body {
 .tip__box__dropdown:before {
   position: absolute;
   content: "";
-  background: url("../img/buttonClose.png") center no-repeat;
+  background: url("../img/buttonClose.webp") center no-repeat;
   width: 40px;
   height: 40px;
   right: 1rem;
@@ -240,7 +240,7 @@ body {
 .tip__box__active:before {
   position: absolute;
   content: "";
-  background: url("../img/buttonOpen.png") center no-repeat;
+  background: url("../img/buttonOpen.webp") center no-repeat;
   width: 40px;
   height: 40px;
   right: 1rem;
